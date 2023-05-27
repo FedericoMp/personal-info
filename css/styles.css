@@ -1,0 +1,278 @@
+/* -- General -- */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 1.5rem;
+}
+a:link,
+a:visited,
+a:active,
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.h5vh {
+    height: 5vh;
+}
+/*  -- Text --  */
+.text-up {
+    text-transform: uppercase;
+}
+.text-cp {
+    text-transform: capitalize;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.fs-italic {
+    font-style: italic;
+}
+.font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.font-zenkaku {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.font-su {
+font-family: system-ui, sans-serif;
+}
+.letsp-0 {
+    letter-spacing: .05rem;
+}
+.letsp-1 {
+    letter-spacing: .1rem;
+}
+/*  -- Util --  */
+.container {
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 0 1rem;
+}
+/* @media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 3rem;
+    }
+} */
+.flex {
+    display: flex;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.column {
+    flex-direction: column;
+}
+.flex-1 {
+    flex: 1;
+}
+.pos-relative {
+    position: relative;
+}
+.pos-absolute {
+    position: absolute;
+}
+.zindex-1 {
+    z-index: 1;
+}
+/*  -- Nav --  */
+nav.nav {
+    min-height: 5vh;
+}
+.nav-shadow {
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.05);
+}
+nav.nav > h1 {
+    margin: 0 0 0 1rem;
+}
+nav.nav.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 1111;
+}
+/* -- Nav > Lang  --*/
+.lang {
+    /* background-color: #000; */
+    background-color: #fff;
+    /* color: #fff; */
+    color: #000;
+    height: 5vh;
+    min-width: 8vw;
+    padding: 0 .5rem;
+    gap: 0.5rem;
+    font-size: .6rem;
+    /* If its absolute */ right: 0;
+}
+nav.nav.fixed-nav > .lang {
+    height: 6vh;
+}
+.lang > span {
+    font-size: .8rem;
+    opacity: .5;
+}
+.lang > a:link,
+.lang > a:visited,
+.lang > a:active,
+.lang > a:hover {
+    /* color: #fff; */
+    color: #000;
+    text-decoration: none;
+    opacity: .5;
+}
+.lang > a:hover {
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: overline;
+}
+.lang > a.active {
+    text-decoration: overline;
+    opacity: 1;
+}
+.lang > span.separator {
+    opacity: .5;
+    font-size: .6rem;
+}
+/* Main > Tech */
+nav.fixed-nav + main > section.tech {
+    margin-top: 10vh;
+}
+section.tech {
+    padding: 0 1rem;
+}
+section.tech > p {
+    max-width: fit-content;
+    opacity: .5;
+}
+section.tech > h2,h3 {
+    color: #383838;
+}
+section.tech > .experience {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: solid 1px #efefef;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #efefef;
+}
+section.tech > .experience > p {
+    opacity: .5;
+}
+section.tech > .tech-projects {
+    margin: 2rem  0 4rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+section.tech > .tech-projects > a {
+    display: inline-block;
+    overflow: hidden;
+}
+section.tech > .tech-projects > a > img {
+    max-width: 360px;
+    max-height: 100%;
+    margin: 0;
+    border-radius: 2px;
+    transform: none;
+    opacity: 1;
+    transition: ease-in .5s;
+}
+@media screen and (max-width: 420px) {
+    section.tech > .tech-projects > a > img {
+        max-width: 100%;
+    }
+}
+section.tech > .tech-projects > a:hover {
+    cursor: pointer;
+}
+section.tech > .tech-projects > a > img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+/* Main > Cta-links */
+section.cta-links {
+    color: #fff;
+    background-color: #000;
+    min-height: 25vh;
+}
+section.cta-links > h3 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+section.cta-links > .cta-container {
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+@media screen and (max-width: 992px) {
+    section.cta-links > .cta-container {
+        flex-direction: column;
+        width: 60%;
+    }
+}
+section.cta-links > .cta-container > a {
+    color: #fff;
+    min-width: 120px;
+    min-height: 28px;
+    border: 1px solid #fff;
+    padding-top: 0.55rem;
+}
+section.cta-links > .cta-container > a:hover {
+    color: #000;
+    background-color: #fff;
+}
+/* Main > Sports */
+section.sports {
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+section.sports > h2,h3 {
+    color: #383838;
+}
+section.sports > .experience {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: solid 1px #efefef;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #efefef;
+}
+section.sports > .experience > p,
+section.sports > p {
+    opacity: .5;
+}
+section.sports > figure {
+    margin: 0;
+}
+section.sports > figure > img {
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 1200px;
+}
+section.sports > figure > figcaption {
+    opacity: 0.5;
+    font-size: small;
+}
+/* Footer */
+footer {
+    margin: 2rem  0;
+}
