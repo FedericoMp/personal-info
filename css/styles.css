@@ -174,7 +174,7 @@ section.tech > .experience {
     border-top: solid 1px #efefef;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: solid 1px #efefef;
+    /* border-bottom: solid 1px #efefef; */
 }
 section.tech > .experience > p {
     opacity: .5;
@@ -243,6 +243,7 @@ section.cta-links > .cta-container > a:hover {
 /* Main > Sports */
 section.sports {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 0 1rem;
 }
 section.sports > h2,h3 {
