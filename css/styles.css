@@ -116,6 +116,32 @@ nav.nav.fixed-nav {
     background: #fff;
     z-index: 1111;
 }
+/* -- Nav > btn-cv  --*/
+a.btn-cv {
+    padding: 0.25rem 0.5rem;
+    transition: ease-in .5s;
+    border-radius: 4px;
+    font-size: .6rem;
+    background-color: #000;
+    color: #fff;
+}
+a.btn-cv > span.material-symbols-outlined {
+    font-size: .8rem;
+}
+a.btn-cv > .hide-mob {
+    margin: 0 .25rem;
+}
+@media screen and (max-width: 420px) {
+    a.btn-cv > span.material-symbols-outlined {
+        margin-right: .25rem;
+    }
+    a.btn-cv > .hide-mob {
+        display: none;
+    }
+}
+a.btn-cv:hover {
+  cursor: pointer;
+}
 /* -- Nav > Lang  --*/
 .lang {
     /* background-color: #000; */
@@ -123,7 +149,7 @@ nav.nav.fixed-nav {
     /* color: #fff; */
     color: #000;
     height: 5vh;
-    min-width: 8vw;
+    min-width: 6vw;
     padding: 0 .5rem;
     gap: 0.5rem;
     font-size: .6rem;
