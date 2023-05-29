@@ -17,6 +17,10 @@ a:hover {
 .h5vh {
     height: 5vh;
 }
+a.chevron > span {
+    font-size: 1rem; 
+    margin-top: 0.3rem;
+}
 /*  -- Text --  */
 .text-up {
     text-transform: uppercase;
@@ -241,8 +245,13 @@ section.cta-links > .cta-container > a:hover {
     background-color: #fff;
 }
 /* Main > Sports */
-section.sports {
+.cta-links ~ section.sports {
     margin-top: 3rem;
+}
+nav.nav ~ main > section.sports.m-top {
+    margin-top: 10vh;
+}
+section.sports {
     margin-bottom: 3rem;
     padding: 0 1rem;
 }
